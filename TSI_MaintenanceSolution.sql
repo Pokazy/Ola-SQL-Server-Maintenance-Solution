@@ -18,11 +18,11 @@ Ola Hallengren
 https://ola.hallengren.com
 
 */
-Testing something
+
 USE [TSI] -- Specify the database in which the objects will be created.
-yeee
+
 SET NOCOUNT ON
-Lets see if it works
+
 DECLARE @CreateJobs nvarchar(max)          = 'Y'         -- Specify whether jobs should be created.
 DECLARE @BackupDirectory nvarchar(max)     = NULL        -- Specify the backup root directory. If no directory is specified, the default backup directory is used.
 DECLARE @BackupURL nvarchar(max)           = NULL        -- Specify the backup root URL.
