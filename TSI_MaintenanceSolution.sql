@@ -19,6 +19,14 @@ https://ola.hallengren.com
 
 */
 
+USE [master] 
+GO
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'TSI')
+BEGIN
+    CREATE DATABASE TSI;
+END;
+GO
+
 USE [TSI] -- Specify the database in which the objects will be created.
 
 SET NOCOUNT ON
